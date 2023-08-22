@@ -1,0 +1,36 @@
+.currentPrice {
+  padding: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+
+  &.up {
+    background: rgba(16, 186, 104, 0.12);
+    color: #00b15d;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &.down {
+    background: rgba(255, 90, 90, 0.12);
+    color: #FF5B5A;
+  }
+
+  &.same {
+    background: rgba(134, 152, 170, 0.12);
+    color: #F0F4F8;
+    
+    svg {
+      display: none;
+    }
+  }
+}

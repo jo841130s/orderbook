@@ -1,0 +1,36 @@
+.container {
+  width: 300px;
+  background: #131B29;
+
+  .title {
+    padding: 8px;
+    color: #F0F4F8;
+    font-weight: 500;
+    text-align: start;
+    border-bottom: 1px solid rgb(134, 152, 170, 0.1);
+  }
+  
+  .head {
+    display: flex;
+    padding: 8px;
+    color: #8698aa;
+    font-size: 12px;
+
+    p {
+      flex: 1;
+      text-align: end;
+      margin: 0;
+
+      &:first-child {
+        text-align: start;
+      }
+    }
+  }
+
+  .quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-bottom: 8px;
+  }
+}
